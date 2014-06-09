@@ -1,0 +1,175 @@
+html, body
+{
+    width: 100%;
+    height: 100%;
+}
+
+/********************************************************/
+
+.container
+{
+    position: relative;
+    display: block;
+}
+
+.container.clip
+{
+    overflow: hidden;
+}
+
+.container.horizontal-center
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container.vertical-center
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.switch-arrow
+{
+    opacity: 0.0;
+    position: absolute;
+
+    top: 0px;
+    bottom: 0px;
+
+    width: 120px;
+
+    background-color: #333333;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    -webkit-transition: opacity 600ms;
+    -moz-transition: opacity 600ms;
+    -ms-transition: opacity 600ms;
+    -o-transition: opacity 600ms;
+    transition: opacity 600ms;
+}
+
+.switch-arrow.left
+{
+    left: 1px;
+    background-image: url(../assets/left-arrow.png);
+}
+
+.switch-arrow.right
+{
+    right: 1px;
+    background-image: url(../assets/right-arrow.png);
+}
+
+.lantern-stack
+{
+    position: absolute;
+
+    width: auto;
+    height: auto;
+}
+
+.lantern-stack .lantern:nth-child(n)
+{
+    margin-right: 30px;
+
+    -webkit-transform: matrix(1, 0, 0, 1);
+    -moz-transform: matrix(1, 0, 0, 1);
+    -ms-transform: matrix(1, 0, 0, 1);
+    -o-transform: matrix(1, 0, 0, 1);
+    transform: matrix(1, 0, 0, 1);
+}
+
+.lantern
+{
+    display: inline-block;
+    float: left;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../assets/room-bg.jpg);
+}
+
+.zoom
+{
+    -webkit-transition: transform 500ms;
+    -moz-transition: transform 500ms;
+    -ms-transition: transform 500ms;
+    -o-transition: transform 500ms;
+    transition: transform 500ms;
+}
+
+.move
+{
+    -webkit-transition: left 500ms ease-out;
+    -moz-transition: left 500ms ease-out;
+    -ms-transition: left 500ms ease-out;
+    -o-transition: left 500ms ease-out;
+    transition: left 500ms ease-out;
+}
+
+
+/********************************************************/
+
+.percent-width-100
+{
+    width: 100%;
+}
+.percent-width-90
+{
+    width: 90%;
+}
+.percent-width-80
+{
+    width: 80%;
+}
+.percent-width-70
+{
+    width: 70%;
+}
+.percent-width-60
+{
+    width: 60%;
+}
+.percent-width-50
+{
+    width: 50%;
+}
+
+.percent-height-100
+{
+    height: 100%;
+}
+.percent-height-90
+{
+    height: 90%;
+}
+.percent-height-80
+{
+    height: 80%;
+}
+.percent-height-70
+{
+    height: 70%;
+}
+.percent-height-60
+{
+    height: 60%;
+}
+.percent-height-50
+{
+    height: 50%;
+}
+
+.show-border
+{
+    border: 1px solid #000000;
+}
+.show-border.red
+{
+    border: 1px solid red;
+}
